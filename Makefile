@@ -22,3 +22,6 @@ lint:
 
 lint-fix:
 	golangci-lint run --timeout 60s --max-same-issues 50 --fix ./...
+
+build:
+	go build -o simple-pre-commit
