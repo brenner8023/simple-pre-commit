@@ -1,0 +1,2 @@
+# simple-pre-commit
+
