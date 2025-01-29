@@ -6,7 +6,7 @@
 ```
 install:
   go install github.com/golangci/golangci-lint/cmd/golangci-lint@latest
-  go install github.com/brenner8023/simple-pre-commit
+  go install github.com/brenner8023/simple-pre-commit@latest
   go mod tidy
 
 lint:
