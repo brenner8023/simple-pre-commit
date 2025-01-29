@@ -5,15 +5,15 @@
 在`Makefile`文件中使用，比如下面这个例子
 ```
 install:
-	go install github.com/golangci/golangci-lint/cmd/golangci-lint@latest
+  go install github.com/golangci/golangci-lint/cmd/golangci-lint@latest
   go install github.com/brenner8023/simple-pre-commit
-	go mod tidy
+  go mod tidy
 
 lint:
-	golangci-lint run --timeout 60s --max-same-issues 50 ./...
+  golangci-lint run --timeout 60s --max-same-issues 50 ./...
 
 pre-commit:
-	@make lint
+  @make lint
 ```
 
 ## 注意
