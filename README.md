@@ -6,8 +6,9 @@
 ```
 install:
   go install github.com/golangci/golangci-lint/cmd/golangci-lint@latest
-  go install github.com/brenner8023/simple-pre-commit@latest
   go mod tidy
+  go install github.com/brenner8023/simple-pre-commit@latest
+  simple-pre-commit
 
 lint:
   golangci-lint run --timeout 60s --max-same-issues 50 ./...
